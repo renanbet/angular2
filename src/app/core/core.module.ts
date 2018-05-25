@@ -7,6 +7,8 @@ import { ProfileMenuComponent } from './profile-menu/profile-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { UserService } from './user/user.service';
+import { AuthService } from './login/auth.service';
+import { AuthGuard } from './guard/auth.guard';
 import { LoginComponent } from './login/login.component';
 
 @NgModule({
@@ -20,6 +22,6 @@ import { LoginComponent } from './login/login.component';
     SidebarComponent,
     ProfileMenuComponent,
   ],
-  providers: [UserService]
+  providers: [UserService, AuthService, AuthGuard]
 })
 export class CoreModule { }

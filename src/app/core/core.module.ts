@@ -12,6 +12,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 
+import { UserService } from './user/user.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -24,6 +26,7 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule
   ],
   declarations: [NavbarComponent, SidebarComponent, ProfileMenuComponent],
-  exports: [NavbarComponent, SidebarComponent, ProfileMenuComponent]
+  exports: [NavbarComponent, SidebarComponent, ProfileMenuComponent],
+  providers: [UserService]
 })
 export class CoreModule { }

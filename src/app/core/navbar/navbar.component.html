@@ -1,5 +1,7 @@
 <mat-toolbar color="primary">
-  <mat-icon>home</mat-icon>
+  <button mat-icon-button (click)="navigate('home')">
+    <mat-icon>home</mat-icon>
+  </button>
   <span class="fill-remaining-space"></span>
   <button mat-icon-button (click)="showProfileMenu = !showProfileMenu">
     <mat-icon>person</mat-icon>

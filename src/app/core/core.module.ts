@@ -13,6 +13,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 
 import { UserService } from './user/user.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { UserService } from './user/user.service';
     MatMenuModule,
     MatCardModule
   ],
-  declarations: [NavbarComponent, SidebarComponent, ProfileMenuComponent],
+  declarations: [NavbarComponent, SidebarComponent, ProfileMenuComponent, LoginComponent],
   exports: [NavbarComponent, SidebarComponent, ProfileMenuComponent],
   providers: [UserService]
 })

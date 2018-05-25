@@ -1,13 +1,8 @@
 <mat-toolbar color="primary">
   <mat-icon>home</mat-icon>
-
   <span class="fill-remaining-space"></span>
-
-  <button mat-icon-button [matMenuTriggerFor]="menu">
+  <button mat-icon-button (click)="showProfileMenu = !showProfileMenu">
     <mat-icon>person</mat-icon>
   </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
 </mat-toolbar>
+<app-profile-menu *ngIf="showProfileMenu"></app-profile-menu>

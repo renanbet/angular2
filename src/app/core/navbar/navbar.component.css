@@ -2,3 +2,11 @@
 .fill-remaining-space {
   flex: 1 1 auto;
 }
+app-profile-menu {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  top: 60px;
+  max-width: 300px;
+  background-color: #ffffff;
+}

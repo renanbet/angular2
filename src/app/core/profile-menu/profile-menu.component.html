@@ -1,9 +1,10 @@
-<mat-card>
-  <img mat-card-avatar src="{{user.image}}" />
-  <mat-card-title>{{user.name}}</mat-card-title>
-  <mat-card-subtitle>{{user.email}}</mat-card-subtitle>
-  <mat-card-actions>
-    <button mat-button>Account</button>
-    <button mat-button>Logout</button>
-  </mat-card-actions>
-</mat-card>
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{user.name}}</span>
+    <p>{{user.email}}</p>
+  </div>
+  <div class="card-action">
+    <a href="#">Account</a>
+    <a href="#">Logout</a>
+  </div>
+</div>

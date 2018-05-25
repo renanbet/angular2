@@ -1,10 +1,13 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button (click)="navigate('home')">
-    <mat-icon>home</mat-icon>
-  </button>
-  <span class="fill-remaining-space"></span>
-  <button mat-icon-button (click)="showProfileMenu = !showProfileMenu">
-    <mat-icon>person</mat-icon>
-  </button>
-</mat-toolbar>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>
+        <a linkRoute="">
+          <i (click)="showProfileMenu = !showProfileMenu" class="material-icons">person</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <app-profile-menu *ngIf="showProfileMenu"></app-profile-menu>
